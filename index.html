@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
+    <style>
+        body {
+
+            background: linear-gradient(to bottom, #ff99cc 0%, #00ffff 100%);
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        #scroll-top {
+            margin-left: 90%;
+        }
+
+        #table1 {
+            border-collapse: collapse;
+            border-color: blue;
+        }
+
+        tr:nth-child(even) {
+            background: rgb(243, 241, 241)
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(0, 128, 0)
+        }
+
+        /* .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        } */
+        .alternateColor {
+            background-color: orange;
+        }
+
+
+        div.block {
+            background-color: rgb(0, 217, 255);
+            width: 100px;
+            border: 1px solid rgb(255, 2, 2);
+        }
+
+        .block1 {
+            position: absolute;
+            background-color: #abc;
+            left: 50px;
+            width: 90px;
+            height: 90px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body style="margin-left: 10%;">
+
+
+    <br>
+
+    <input type="checkbox" id="terms_and_conditions" name="accept" class="accept" value="yes">
+    <label for="terms_and_conditions">I accept</label>
+
+    <br>
+    <!-- <input type="submit" id="submit_button" value="submit" class="btn-btn-primary submit" disabled="disabled"
+        name="submit"> -->
+    <!-- <button type="submit" id="submit_button" value="submit" class="btn-btn-primary submit" disabled="disabled" name="submit">
+        Submit</button> -->
+    <button type="submit" id="submit_button" value="submit" class="btn btn-primary" disabled="disabled"
+        name="submit">Submit</button>
+
+
+    <br>
+    <br>
+    <table id="table1">
+        <tr>
+            <th class="student">Student</th>
+            <th class="student">Grade</th>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td class="student">James</td>
+            <td class="student">2.2</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>1.6</td>
+        </tr>
+        <tr>
+            <td class="student">John</td>
+            <td class="student">2.0</td>
+        </tr>
+
+
+    </table>
+
+    <br>
+    <!-- 
+    <button id="alternateColor">Change Alternate Color</button> -->
+    <button id="alternateColor" type="button" class="btn btn-warning">Change Alternate Color</button>
+
+    <br>
+
+    <br>
+    <br>
+    <form>
+
+        <textarea id="textarea" maxlength="15"></textarea>
+        <br>
+        <span id="rchars">15</span> Character(s) Remaining
+
+    </form>
+    <p class="display"></p>
+
+    <br>
+
+    <br>
+
+    <button class="btn btn-primary add-option">Add</button>
+    <select name="dropdown-dark " class="dropdown"></select>
+
+    <button class="btn btn-danger remove-option">Remove</button>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Good Morning" class="btn btn-success change">
+
+    <br>
+    <br>
+
+    <!-- number 10 -->
+
+    Input Amount: <input type=”text” class="number">
+
+
+    <br><br>
+    <!-- number 11 -->
+
+    <!-- <button id="go">Animate</button> -->
+    <button id="go" type="button" class="btn btn-primary">Animate</button>
+    <br>
+    <br>
+    <div class="block">Hello!</div>
+
+    <br>
+    <br>
+
+
+    <!-- <button id="up">Up</button>
+    <button id="down">Down</button> -->
+
+    <!-- number 12 -->
+    <button id="up" type="button" class="btn btn-warning">Up</button>
+    <button id="down" type="button" class="btn btn-warning">Down</button>
+
+    <br><br>
+
+    <!-- <button id="left">Left</button>
+    <button id="right">Right</button> -->
+    <button id="left" type="button" class="btn btn-warning">Left</button>
+    <button id="right" type="button" class="btn btn-warning">Right</button>
+
+    <div class="block1"></div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- number1 -->
+    <!-- <button type="button" class="scroll-top">Up</button> -->
+    <button id="scroll-top" type="button" class="btn btn-primary">Scroll to Top</button>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        //get
+        $(document).ready(function () {
+
+
+            //number1 
+            $('#scroll-top').on('click', function () {
+                $('html').animate({
+                    scrollTop: 0
+                }, 'slow');
+            })
+
+
+            //number 2
+            $('#terms_and_conditions').on('click', function () {
+                if ($(this).is(':checked')) {
+                    $('#submit_button').attr("disabled", false);
+                } else {
+                    $('#submit_button').attr("disabled", true);
+                }
+            });
+
+
+
+            // })
+
+            //number 3          
+            $("#alternateColor").on('click',function () {
+                $(".student").css("backgroundColor", "orange")
+
+            })
+
+            //number 4
+
+            var maxLength = 15;
+            $('textarea').keyup(function () {
+                var textlen = maxLength - $(this).val().length;
+                $('#rchars').text(textlen);
+
+                $(".display").text($(this).val())
+            });
+
+
+
+            //number 5
+            $('.add-option').on('click',function () {
+                // var option = $("option").val();
+                $('.dropdown').append("<option>" + $('.display').text() + "</option>")
+            })
+            //number6
+            $(".remove-option").on('click',function () {
+                $("Option:Selected").remove()
+            })
+
+            //number7
+
+            $(".number").keyup(function () {
+                this.value = this.value.replace(/[^0-9\.]/g, '')
+            })
+
+
+
+            //number 8
+            $(".change").on('click', function () {
+                if ($(".change").val() == "Good Morning") {
+                    $(".change").val("Good Evening");
+                } else {
+                    $(".change").val("Good Morning");
+                }
+            })
+
+
+
+            //animate number 11
+            $("#go").on('click',function () {
+                $(".block").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                    marginLeft: "0.6in",
+                    fontSize: "3em",
+                    borderWidth: "10px"
+                }, 1500);
+            });
+
+
+            //4 buttons of number 12 jquery
+            //number 12
+
+            $("#right").on('click',function () {
+                $(".block1").animate({ "left": "+=50px" }, "slow");
+            });
+
+            $("#left").on('click',function () {
+                $(".block1").animate({ "left": "-=50px" }, "slow");
+            });
+            $("#down").on('click',function () {
+                $(".block1").animate({ "marginTop": "+=50px" }, "slow");
+            });
+            $("#up").on('click',function () {
+                $(".block1").animate({ "marginTop": "-=50px" }, "slow");
+            });
+
+            //input number only
+            $('input.number').keyup(function (event) {
+                if (event.which !== 8 && event.which !== 0 && event.which < 48 || event.which > 57) {
+                    // 0 for null value
+                    // 8 for backspace
+                    // 48-57 for 0-9 numbers
+                    $(this).val(function (index, value) {
+                        return value.replace(/\D/g, "");
+                    });
+                }
+            });
+
+
+
+
+        })//document ready function
+
+    </script>
+
+
+</body>
+
+</html>
